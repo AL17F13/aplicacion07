@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+ <head> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+ 
+  <title>Mi aplicacion</title>
+
+  <!--grupo CSS-->
+  <link rel="stylesheet" href="css/hola.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css" />
+  <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" /> 
+        
+        
+
+
+  <!--grupo JavaScript-->
+  <script src="js/jquery-1.11.2.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+  <script src="js/acciones.js" type="text/javascript"></script>
+  <!-- <script src="phonegap.js" type="text/javascript"></script> -->
+ </head>
+
+  
+    <body>
+        <div data-role="page" id="page">
+	<div data-role="header">
+		<h1>Principal</h1>
+        <h1 align="center">DIAS PARA MI CUMPLE</h1>
+	</div>
+	<div data-role="content">	
+    
+    <h3 align="center">BIENVENIDO</h3>
+		<p>Esta sera una aplicacion en la cual podras saber cuntos dias faltan para tu cumple comenzemos.......!;p
+        <div align="right">
+        <a  href="#datos" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right">
+        
+        comenzar
+        </a>	
+        </div>	
+ </div>
+ 
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@Asael hidalgo benitez</h4>
+        <h4>@David Madrid Galicia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="datos">
+	<div data-role="header">
+		<h1>Datos</h1>
+        <h1>NOMBRE</h1>
+	</div>
+	<div data-role="content" >	
+ <input type="text" name="nombre" placeholder="Ingresa Nombre" style="we:100" id="txtnombre" >
+	 <div data-role="controlgroup" data-type="horizontal" align="center">
+
+        <a  href="#page" data-role="button" data-inline="true" data-icon="arrow-l" data-iconpos="left">   
+        atras
+        </a>	
+        <a  href="#fechas" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" id="siguiente_nombre">
+        
+        siguiente
+        </a>	
+        </div>		
+	 </div>
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@Asael hidalgo benitez</h4>
+        <h4>@David Madrid Galicia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="fechas">
+	<div data-role="header">
+		<h1>Fechas</h1>
+        <h1>NACIMIENTO</h1>
+	</div>
+	<div align="center" data-role="controlgroup" data-type="horizontal">	
+    
+    <div align="center" style="width:100px; float:left; padding:15px">
+    DIA
+    <input type="number" name="numero" placeholder="escribe dia" id="diacumple">
+    DD
+    </div>
+     <div align="center" style="width:100px; float:left; padding:15px">
+     MES
+    <input type="number" name="numero" placeholder="escribe mes" id="mescumple">
+    MM
+    </div>
+     <div align="center" style="width:80px; float:left; padding:15px">
+     AÑO
+    <input type="number" name="numero" placeholder="escribe año" id="yearcumple">
+    AA
+    </div>
+		 <div data-role="controlgroup" data-type="horizontal" align="center" style="clear:both">
+        <a  href="#datos" data-role="button" data-inline="true" data-icon="arrow-l" data-iconpos="left">   
+        atras
+        </a>	
+        <a  href="#resultado" data-role="button" data-inline="true" data-icon="arrow-r" data-iconpos="right" id="siguiente_fecha">
+         
+        siguiente
+        </a>	
+        </div>			
+	</div>
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@Asael hidalgo benitez</h4>
+        <h4>@David Madrid Galicia</h4>
+	</div>
+</div>
+
+<div data-role="page" id="resultado" >
+	<div data-role="header">
+		<h1>Resultado</h1>
+        <h1>DIAS PARA CELEBRAR</h1>
+	</div>
+	<div data-role="content">
+ <div id="Mnombre" align="center" class="final">
+ 
+ 
+ </div>
+  <div id="Mdias" align="center" class="final">
+ 
+ 
+ </div>
+  <div id="Mcumple" align="center" class="final">
+ 
+ 
+ </div>
+  <div id="Mfelicidades" align="center" hidden="true" class="final">
+FELICIDADES YA CASI ES TU CUMPLE
+
+<img src="images/globos-fiesta.jpg" style="width: 50%"></div>
+ 
+ </div>
+ 
+  <div id="Medad" align="center" class="final">
+ 
+    </div>
+ 
+ 
+	<div data-role="footer" data-position="fixed">
+
+		<h4>@Asael hidalgo benitez</h4>
+        <h4>@David Madrid Galicia</h4>
+	</div>
+</div>
+
+    </body>
+
+</html>
